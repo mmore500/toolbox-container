@@ -3,7 +3,7 @@ FROM centos:7.6.1810
 RUN \
   yum install -y \
     centos-release-scl-rh \
-    devtoolset-8-toolchain \
+    devtoolset-9\* \
     && \
   echo "installed compilers"
 
