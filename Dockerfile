@@ -4,6 +4,7 @@ RUN \
   yum install -y \
     centos-release-scl-rh \
     devtoolset-9\* \
+    llvm-toolset-7\* \
     && \
   echo "installed compilers"
 
