@@ -6,6 +6,8 @@ RUN \
     linux-tools \
     linux-tools-3.10.0 \
     gdb \
+    perf \
+    gawk \
     && \
   echo "installed profiling and debugging tools"
 
