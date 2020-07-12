@@ -8,7 +8,8 @@ RUN \
     devtoolset-9-gcc \
     devtoolset-9-gdb \
     devtoolset-9-gcc-c++ \
-    llvm-toolset-7\* \
+    llvm-toolset-7 \
+    llvm-toolset-7-clang \
     && \
   echo "installed compilers"
 
