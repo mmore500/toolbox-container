@@ -1,20 +1,7 @@
 FROM centos:7.6.1810
 
 RUN \
-  apt-get update -y \
-    && \
-  apt-get install -y software-properties-common \
-    && \
-  add-apt-repository -y ppa:ubuntu-toolchain-r/test \
-    && \
-  apt-get update -y \
-    && \
-  apt-get -y upgrade \
-    && \
-  echo "configured packaging system"
-
-RUN \
-  apt-get install -y \
+  yum install -y \
     linux-tools-generic \
     linux-tools \
     linux-tools-3.10.0 \
@@ -23,7 +10,7 @@ RUN \
   echo "installed profiling and debugging tools"
 
 RUN \
-  apt-get install -y \
+  yum install -y \
     curl \
     git \
     htop \
