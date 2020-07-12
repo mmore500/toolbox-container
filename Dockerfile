@@ -21,6 +21,7 @@ RUN \
 
 RUN \
   yum install -y \
+    make \
     curl \
     git \
     htop \
