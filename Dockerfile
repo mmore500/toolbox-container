@@ -3,7 +3,11 @@ FROM centos:7.6.1810
 RUN \
   yum install -y \
     centos-release-scl-rh \
-    devtoolset-9\* \
+    devtoolset-9 \
+    devtoolset-9-make \
+    devtoolset-9-gcc \
+    devtoolset-9-gdb \
+    devtoolset-9-gcc-c++ \
     llvm-toolset-7\* \
     && \
   echo "installed compilers"
@@ -13,7 +17,6 @@ RUN \
     linux-tools-generic \
     linux-tools \
     linux-tools-3.10.0 \
-    gdb \
     perf \
     gawk \
     && \
