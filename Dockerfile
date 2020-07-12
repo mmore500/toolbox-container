@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM centos:7.6.1810
 
 RUN \
   apt-get update -y \
