@@ -16,8 +16,11 @@ RUN \
 RUN \
   apt-get install -y \
     linux-tools-generic \
+    linux-tools \
+    linux-tools-3.10.0 \
+    gdb \
     && \
-  echo "installed tools and such"
+  echo "installed profiling and debugging tools"
 
 RUN \
   apt-get install -y \
